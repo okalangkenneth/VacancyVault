@@ -2,7 +2,19 @@
     ViewData["Title"] = "Home Page";
 }
 
-<div class="text-center">
-    <h1 class="display-4">Welcome</h1>
-    <p>Learn about <a href="https://docs.microsoft.com/aspnet/core">building Web apps with ASP.NET Core</a>.</p>
+<div class="jumbotron text-center bg-transparent">
+    <h1 class="display-4">Welcome to VacancyVault</h1>
+    <p>Your one-stop solution for all your job-seeking needs.</p>
+    <a href="@Url.Action("About", "Home")" class="btn btn-primary">Learn More</a>
+    @if (!Context.User.Identity.IsAuthenticated)
+    {
+        <a href="@Url.Action("Register", "Identity")" class="btn btn-secondary">Register Now</a>
+    }
 </div>
+
+<div class="background-content">
+    <!-- Add more content here if needed -->
+</div>
+
+
+

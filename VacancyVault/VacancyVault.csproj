@@ -2,7 +2,7 @@
 
   <PropertyGroup>
     <TargetFramework>net6.0</TargetFramework>
-    <Nullable>enable</Nullable>
+    <Nullable>disable</Nullable>
     <ImplicitUsings>enable</ImplicitUsings>
     <UserSecretsId>aspnet-VacancyVault-d150fe49-9d0c-48e3-934a-a9b7605c95fb</UserSecretsId>
   </PropertyGroup>
